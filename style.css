@@ -1,0 +1,109 @@
+/* card1 */
+.card1{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+.card1:hover img{
+    transform: scale(1.1);
+}
+.card1 .imgContainer img{
+    display: block;
+    width: 100%;
+    transition: all 0.25s ease;
+}
+.card1 .content{
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.25s ease;
+    color: rgba(255, 255, 255, 0);
+}
+.card1:hover .content{
+    color: white;
+}
+.card1:active{
+    transform: scale(0.95);
+}
+/* -------------- */
+/* card2 */
+.card2{
+    overflow: hidden;
+    border-radius: 20px;
+    width: 300px;
+    transition: transform 0.25s ease;
+    background-color: rgb(194, 194, 194);
+}
+.card2 .imgContainer img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card2 .imgContainer{
+    overflow: hidden;
+    display: block;
+}
+.card2:hover .imgContainer>img{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+}
+.card2:active{
+    transform: scale(0.95);
+}
+.card2 h2{
+    padding: 10px;
+}
+.card2 p{
+    padding: 10px;
+}
+/* -------------- */
+/* card3 */
+.card3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: grey;
+    transition: all 0.25s ease;
+}
+.card3 .title{
+    font-size: 72px;
+    font-weight: 700;
+    white-space: nowrap;
+    position: absolute;
+    right: -50%;
+    top: 10%;
+    transition: right 1.5s ease;
+    color: rgb(57, 57, 57);
+}
+.card3:hover .title{
+    right: 50%;
+    color: white;
+}
+.card3:hover{
+    background-image: linear-gradient(45deg,#B11313,#2B3784);
+}
+.card3 p{
+    margin: 0;
+    color: white;
+}
+.card3 .title2{
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+}
+.card3 .textContainer{
+    margin: 5%;
+    margin-top: 50%;
+    position: relative;
+}
